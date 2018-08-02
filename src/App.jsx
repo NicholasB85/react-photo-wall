@@ -8,14 +8,10 @@ const PHOTO_URL = "https://picsum.photos/200?photo=";
 const PHOTO_LIST_URL = "https://picsum.photos/list";
 
 class App extends Component {
-  // 1. Declare a state object that will be used to track an array of photos
+  
   state = { photos: [] }
 
-  // 2. Declare a life cycle method
-  // This life cycle method should:
-  //  - will be called after the component is initially rendered
-  // - will fetch an array of photos
-  // - will add that array of photos to state once received
+  
 
   componentDidMount() {
     fetch (PHOTO_LIST_URL)

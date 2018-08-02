@@ -4,14 +4,25 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: auto;
+    overflow: hidden;
+    overscroll-behavior: auto;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
 }
 .collage {
+    top: 80px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    width: 800px;
+    width: 960px;
+    margin-top: 90px;
     margin-right: auto;
     margin-left: auto;  
 }
+.collage img {
+    border: 10px solid white;
+}
+
 
